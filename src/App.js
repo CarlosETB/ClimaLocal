@@ -29,13 +29,13 @@ function App() {
   if (location === false) {
     return (
       <Fragment>
-        <h1>Você precisa habilitar a localização no browser</h1>
+        <h1>- Você precisa habilitar a localização no browser -</h1>
       </Fragment>
     )
   } else if (weather === false) {
     return (
       <Fragment>
-        <h1>Carregando o clima...</h1>
+        <h1>- Carregando o clima... -</h1>
       </Fragment>
     )
   } else {
