@@ -1,5 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import axios from 'axios';
+import './App.css';
  
 function App() {
   const [location, setLocation] = useState(false);
@@ -25,30 +26,37 @@ function App() {
     })
   }, [])
   
-  if (location == false) {
+  if (location === false) {
     return (
       <Fragment>
-        Você precisa habilitar a localização no browser o/
+        <h1>Você precisa habilitar a localização no browser</h1>
       </Fragment>
     )
-  } else if (weather == false) {
+  } else if (weather === false) {
     return (
       <Fragment>
-        Carregando o clima...
+        <h1>Carregando o clima...</h1>
       </Fragment>
     )
   } else {
     return (
       <Fragment>
-        <h3>Clima nas suas Coordenadas ({weather['weather'][0]['description']})</h3>
-        <hr/>
-        <ul>
-          <li>Temperatura atual: {weather['main']['temp']}°</li>
-          <li>Temperatura máxima: {weather['main']['temp_max']}°</li>
-          <li>Temperatura minima: {weather['main']['temp_min']}°</li>
-          <li>Pressão: {weather['main']['pressure']} hpa</li>
-          <li>Humidade: {weather['main']['humidity']}%</li>
-        </ul>
+        <h1>- Clima nas suas Coordenadas -</h1>
+        <form>
+          <div>
+            <p>{weather['weather'][0]['description']}</p> 
+            <h3>{Math.floor(weather['main']['temp'])}°</h3>
+          </div>
+          <line />
+          <div>
+            <ul>
+              <li>Temperatura máxima: {Math.floor(weather['main']['temp_max'])}°</li>
+              <li>Temperatura minima: {Math.floor(weather['main']['temp_min'])}°</li>
+              <li>Pressão: {Math.floor(weather['main']['pressure'])} hpa</li>
+              <li>Humidade: {Math.floor(weather['main']['humidity'])}%</li>
+            </ul>
+          </div>
+        </form>
       </Fragment>
     );
   }
