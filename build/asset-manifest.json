@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.fcdb852b.chunk.js",
-    "main.js.map": "/static/js/main.fcdb852b.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.6e74be3c.js",
-    "runtime~main.js.map": "/static/js/runtime~main.6e74be3c.js.map",
-    "static/js/2.085f0258.chunk.js": "/static/js/2.085f0258.chunk.js",
-    "static/js/2.085f0258.chunk.js.map": "/static/js/2.085f0258.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.98a47ec7df3814cbdc892997d56dff89.js": "/precache-manifest.98a47ec7df3814cbdc892997d56dff89.js",
-    "service-worker.js": "/service-worker.js"
+    "main.css": "/ClimaLocal/static/css/main.298980db.chunk.css",
+    "main.js": "/ClimaLocal/static/js/main.5635127e.chunk.js",
+    "main.js.map": "/ClimaLocal/static/js/main.5635127e.chunk.js.map",
+    "runtime~main.js": "/ClimaLocal/static/js/runtime~main.39b44fa6.js",
+    "runtime~main.js.map": "/ClimaLocal/static/js/runtime~main.39b44fa6.js.map",
+    "static/js/2.085f0258.chunk.js": "/ClimaLocal/static/js/2.085f0258.chunk.js",
+    "static/js/2.085f0258.chunk.js.map": "/ClimaLocal/static/js/2.085f0258.chunk.js.map",
+    "index.html": "/ClimaLocal/index.html",
+    "precache-manifest.f83620a942580dd82ce2922eb38af515.js": "/ClimaLocal/precache-manifest.f83620a942580dd82ce2922eb38af515.js",
+    "service-worker.js": "/ClimaLocal/service-worker.js",
+    "static/css/main.298980db.chunk.css.map": "/ClimaLocal/static/css/main.298980db.chunk.css.map"
   }
 }

@@ -2,8 +2,17 @@
   "name": "weather-location",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://CarlosETB.github.io/ClimaLocal",
+  "author": {
+    "name": "Carlos Tonholi",
+    "email": "carloseduardotonholi@gmail.com",
+    "url": "https://github.com/CarlosETB"
+  },
   "dependencies": {
     "axios": "^0.19.0",
+    "gh-pages": "^2.1.1",
+    "lodash": "^4.17.15",
+    "lodash.template": "^4.5.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1"
@@ -12,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
